@@ -1,45 +1,66 @@
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Dom Challenge</title>
-  <style>
-    #counter {
-      background-color: black;
-      color: white;
-      display: table;
-      padding: 10px;
-    }
-  </style>
-</head>
-<body>
-  <h1>
-    Welcome to the DOM Challenge
-  </h1>
-  <h1 id='counter'>
-    0
-  </h1>
-  <button id='minus' > ➖ </button>
-  <button id='plus' > ➕ </button>
-  <button id='heart' > ❤️ </button>
-  <button id='pause' > pause </button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Challenge</title>
+    <style>
+      body {
+        font-family: cursive;
+      }
+      #container {
+        max-width: 600px;
+        margin: 3em auto auto auto;
+        text-align: center;
+      }
+      #counter {
+        color: black;
+        padding: 0.5em;
+        border-radius: 0.5em;
+      }
+      input[type="text"] {
+        padding: 0.5em;
+        border-radius: 0.5em;
+        margin: 0.5em;
+      }
+      button {
+        padding: 0.5em;
+        border-radius: 0.25em;
+        margin: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Welcome to the DOM Challenge</h1>
+      <h1 id="counter">0</h1>
 
-  <ul class='likes'></ul>
+      <button id="minus">-</button>
+      <button id="plus">+</button>
+      <button id="heart">❤️</button>
+      <button id="pause">pause</button>
 
-  <div>
-    <h3>Comments</h3>
-    <div id='list' class='comments'></div>
+      <ul class="likes"></ul>
 
-    <h3>Leave a comment</h3>
+      <div>
+        <h3>Comments</h3>
+        <div id="list" class="comments"></div>
+        <h3>Leave a comment</h3>
 
-    <form id="comment-form" action="">
-      <input type='text' name="comment" id="comment-input" cols="30" rows="10">
-      </br>
-      <button id='submit'>submit</button>
-    </form>
-
-  </div>
-
-  <script src="js/index.min.js"></script>
-  <script src="js/challenge.js"></script>
-</body>
+        <form id="comment-form" action="">
+          <input
+            type="text"
+            name="comment"
+            id="comment-input"
+            cols="30"
+            rows="10"
+          />
+          <br />
+          <button id="submit">submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- <script src="./js/index.min.js"></script> -->
+    <script src="./js/challenge.js"></script>
+  </body>
 </html>
